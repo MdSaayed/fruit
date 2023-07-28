@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fruit</title>
   <!-- goole font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,39 +28,34 @@
   <header class="container m-auto px-8 md:px-10 lg:px-16">
     <!-- navbar start -->
     <nav class="mt-8 lg:my-8">
-      <div class="navbar hidden lg:inline-flex bg-[#F85559] rounded-full py-3 px-5">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
+      <div class="navbar hidden lg:inline-flex bg-[#F85559] rounded-full py-3 px-5 flex justify-between">
+        <ul class="text-white flex gap-3">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">All Fruits</a></li>
+        </ul>
+        <ul class="">
           <img class="w-44" src="./images/logo.png" alt="" srcset="">
-        </div>
-        <div class="navbar-end">
+        </ul>
+        <ul class="">
           <div class="form-control">
             <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto h-8 rounded-full" />
-          </div>
-        </div>
+        </ul>
+      </div>
       </div>
       <!-- mobile nav -->
       <div class="navbar p-0 bg-base-100 lg:hidden md:hidden">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl"><img class="w-30" src="./images/blacklogo.png" alt="" srcset=""></a>
+          <a class="btn btn-ghost normal-case text-xl"><img class="w-30" src="./images/blacklogo.png" alt=""
+              srcset=""></a>
         </div>
         <div class="flex-none">
           <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
           </button>
         </div>
       </div>
@@ -70,9 +65,8 @@
     <!-- slider -->
     <div class="carousel w-full">
       <div id="slide1"
-        class="carousel-item z-10 relative bg-[url('./images/banner1.png')] w-full h- lg:h-screen flex justify-center items-center bg-cover bg-center z-1"
-        style="z-index:1;">
-        <div class="absolute inset-0 bg-[#000] opacity-40"></div>
+        class="carousel-item rounded-lg block relative bg-[url('./images/banner1.png')] w-full h- lg:h-screen flex justify-center items-center bg-cover bg-center">
+        <div class="absolute rounded-lg inset-0 bg-[#000] opacity-40"></div>
         <div class="max-w-md flex justify-center items-center flex-col p-8">
           <h1 class="mb-5 z-10 text-5xl font-bold text-center text-white">Exotic tastes at your doorstep</h1>
           <p class="mb-5 z-10 text-white">We supply highly quality organic products</p>
@@ -84,9 +78,8 @@
         </div>
       </div>
       <div id="slide2"
-        class="carousel-item z-10 relative bg-[url('./images/banner2.png')] w-full flex justify-center items-center bg-cover bg-center"
-        style="z-index:1;">
-        <div class="absolute inset-0 bg-[#000] opacity-40"></div>
+        class="carousel-item block rounded-lg relative bg-[url('./images/banner2.png')] w-full flex justify-center items-center bg-cover bg-center">
+        <div class="absolute rounded-lg inset-0 bg-[#000] opacity-40"></div>
         <div class="max-w-md flex justify-center items-center flex-col p-8">
           <h1 class="mb-5 z-10 text-5xl font-bold text-center text-white">Exotic tastes at your doorstep</h1>
           <p class="mb-5 z-10 text-white">We supply highly quality organic products</p>
@@ -98,9 +91,8 @@
         </div>
       </div>
       <div id="slide3"
-        class="carousel-item z-10 relative bg-[url('./images/banner3.png')] w-full flex justify-center items-center bg-cover bg-center"
-        style="z-index:1;">
-        <div class="absolute inset-0 bg-[#000] opacity-40"></div>
+        class="carousel-item block rounded-lg relative bg-[url('./images/banner3.png')] w-full flex justify-center items-center bg-cover bg-center">
+        <div class="absolute rounded-lg inset-0 bg-[#000] opacity-40"></div>
         <div class="max-w-md flex justify-center items-center flex-col p-8">
           <h1 class="mb-5 z-10 text-5xl font-bold text-center text-white">Exotic tastes at your doorstep</h1>
           <p class="mb-5 z-10 text-white">We supply highly quality organic products</p>
@@ -112,9 +104,8 @@
         </div>
       </div>
       <div id="slide4"
-        class="carousel-item z-10 relative bg-[url('./images/banner4.png')] w-full flex justify-center items-center bg-cover bg-center"
-        style="z-index:1;">
-        <div class="absolute inset-0 bg-[#000] opacity-40"></div>
+        class="carousel-item block rounded-lg relative bg-[url('./images/banner4.png')] w-full flex justify-center items-center bg-cover bg-center">
+        <div class="absolute rounded-lg inset-0 bg-[#000] opacity-40"></div>
         <div class="max-w-md flex justify-center items-center flex-col p-8">
           <h1 class="mb-5 z-10 text-5xl font-bold text-center text-white">Exotic tastes at your doorstep</h1>
           <p class="mb-5 z-10 text-white">We supply highly quality organic products</p>
@@ -126,12 +117,11 @@
         </div>
       </div>
     </div>
-
     <!-- fruit showcase -->
-    <section class="-mt-20 z-40">
+    <section class="-mt-20 hidden lg:block" style="z-index: 2;">
       <div class="flex grid grid-cols-5 mx-14 bg-white drop-shadow rounded p-5">
         <div class="flex justify-center items-center flex-col">
-          <div><img class="h-20" src="./images/fruit1.png" alt=""></div>
+          <div><img class="" src="./images/fruit1.png" alt=""></div>
           <div>
             <h2 class="font-lato text-[rgba(18, 18, 18, 0.80)] font-medium">Strawberry</h2>
           </div>
@@ -215,93 +205,109 @@
   <!-- modal section -->
   <section>
     <div class="container m-auto px-8 md:px-10 lg:px-16 pb-24">
-       <!-- Open the modal using ID.showModal() method -->
-       <!-- modal 1 -->
-       <dialog id="my_modal_1" class="modal ">
-         <form method="dialog" class="modal-box rounded">
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- modal 1 -->
+      <dialog id="my_modal_1" class="modal ">
+        <form method="dialog" class="modal-box rounded">
           <div class="">
             <div class="card border-inherit flex flex-col p-10">
               <div class="flex flex-col justify-center items-center border-inherit">
                 <img src="./images/fruit6.png" alt="" srcset="">
                 <span class="font-bold text-xl leading-3 text-[#121212] py-6">Apples</span>
-                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh
+                  fruits.</p>
               </div>
               <div class="flex flex-col justify-center items-center">
                 <img class="w-32" src="./images/review.png" alt="" srcset="">
                 <div class="flex gap-4 justify-center mt-4">
-                  <button class="btn">Close</button> 
-                  <button class="py-3 px-8 bg-[#F85559] text-white rounded-md" href="" class="btn">Buy Now</button>
+                  <button
+                    class="py-2 px-8 hover:text-white hover:bg-[#F85559] rounded-md border border-[#F85559]">Close</button>
+                  <button
+                    class="py-2 px-8 hover:border hover:border-[#F85559] hover:text-black hover:bg-[#f8555800] bg-[#F85559] text-white rounded-md"
+                    href="" class="btn">Buy Now</button>
                 </div>
               </div>
             </div>
-           </div>
-         </form>
-       </dialog>
-       <!-- modal 2 -->
-       <dialog id="my_modal_2" class="modal">
-         <form method="dialog" class="modal-box rounded">
+          </div>
+        </form>
+      </dialog>
+      <!-- modal 2 -->
+      <dialog id="my_modal_2" class="modal">
+        <form method="dialog" class="modal-box rounded">
           <div class="">
             <div class="card border-inherit flex flex-col p-10">
               <div class="flex flex-col justify-center items-center border-inherit">
                 <img src="./images/fruit7.png" alt="" srcset="">
                 <span class="font-bold text-xl leading-3 text-[#121212] py-6">Orange</span>
-                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh
+                  fruits.</p>
               </div>
               <div class="flex flex-col justify-center items-center">
                 <img class="w-32" src="./images/review.png" alt="" srcset="">
                 <div class="flex gap-4 justify-center mt-4">
-                  <button class="btn">Close</button> 
-                  <button class="py-3 px-8 bg-[#F85559] text-white rounded-md" href="" class="btn">Buy Now</button>
+                  <button
+                    class="py-2 px-8 hover:text-white hover:bg-[#F85559] rounded-md border border-[#F85559]">Close</button>
+                  <button
+                    class="py-2 px-8 hover:border hover:border-[#F85559] hover:text-black hover:bg-[#f8555800] bg-[#F85559] text-white rounded-md"
+                    href="" class="btn">Buy Now</button>
                 </div>
               </div>
             </div>
-           </div>
-         </form>
-       </dialog>
-       <!-- modal 3 -->
-       <dialog id="my_modal_3" class="modal">
-         <form method="dialog" class="modal-box rounded">
+          </div>
+        </form>
+      </dialog>
+      <!-- modal 3 -->
+      <dialog id="my_modal_3" class="modal">
+        <form method="dialog" class="modal-box rounded">
           <div class="">
             <div class="card border-inherit flex flex-col p-10">
               <div class="flex flex-col justify-center items-center border-inherit">
                 <img src="./images/fruit6.png" alt="" srcset="">
                 <span class="font-bold text-xl leading-3 text-[#121212] py-6">Red Dragon</span>
-                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh
+                  fruits.</p>
               </div>
               <div class="flex flex-col justify-center items-center">
                 <img class="w-32" src="./images/review.png" alt="" srcset="">
                 <div class="flex gap-4 justify-center mt-4">
-                  <button class="btn">Close</button> 
-                  <button class="py-3 px-8 bg-[#F85559] text-white rounded-md" href="" class="btn">Buy Now</button>
+                  <button
+                    class="py-2 px-8 hover:text-white hover:bg-[#F85559] rounded-md border border-[#F85559]">Close</button>
+                  <button
+                    class="py-2 px-8 hover:border hover:border-[#F85559] hover:text-black hover:bg-[#f8555800] bg-[#F85559] text-white rounded-md"
+                    href="" class="btn">Buy Now</button>
                 </div>
               </div>
             </div>
-           </div>
-         </form>
-       </dialog>
-       <!-- modal 4 -->
-       <dialog id="my_modal_4" class="modal">
-         <form method="dialog" class="modal-box rounded">
+          </div>
+        </form>
+      </dialog>
+      <!-- modal 4 -->
+      <dialog id="my_modal_4" class="modal">
+        <form method="dialog" class="modal-box rounded">
           <div class="">
             <div class="card border-inherit flex flex-col p-10">
               <div class="flex flex-col justify-center items-center border-inherit">
                 <img src="./images/fruit6.png" alt="" srcset="">
                 <span class="font-bold text-xl leading-3 text-[#121212] py-6">Banana</span>
-                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="text-center my-4">Professional employees are there for you to pick the most amazing and fresh
+                  fruits.</p>
               </div>
               <div class="flex flex-col justify-center items-center">
                 <img class="w-32" src="./images/review.png" alt="" srcset="">
                 <div class="flex gap-4 justify-center mt-4">
-                  <button class="btn">Close</button> 
-                  <button class="py-3 px-8 bg-[#F85559] text-white rounded-md" href="" class="btn">Buy Now</button>
+                  <button
+                    class="py-2 px-8 hover:text-white hover:bg-[#F85559] rounded-md border border-[#F85559]">Close</button>
+                  <button
+                    class="py-2 px-8 hover:border hover:border-[#F85559] hover:text-black hover:bg-[#f8555800] bg-[#F85559] text-white rounded-md"
+                    href="" class="btn">Buy Now</button>
                 </div>
               </div>
             </div>
-           </div>
-         </form>
-       </dialog>
+          </div>
+        </form>
+      </dialog>
 
-       <!-- card items -->
+      <!-- card items -->
       <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <!-- card 1 -->
         <div class="card border rounded-lg border-inherit flex flex-col p-10">
@@ -360,17 +366,17 @@
 
   <!-- team section -->
   <section class="container m-auto px-8 md:px-10 lg:px-16">
-    <div class="bg-cover relative bg-center bg-[url('./images/team.png')] py-16">
-      <div class="absolute inset-0 bg-[#000] opacity-70"></div>
-      <div class="text-center">
-        <h2 class="text-5xl z-10 font-extrabold text-white">Meet the team section</h2>
+    <div class="bg-cover rounded-lg relative bg-center bg-[url('./images/team.png')] py-24 px-8">
+      <div class="absolute rounded-lg inset-0 bg-[#000] opacity-70"></div>
+      <div class="text-center z-10">
+        <h2 class="text-5xl  font-extrabold text-white">Meet the team section</h2>
         <p class="text-white text-base font-medium">Contrary to popular belief, is not simply random text. It has roots
           in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 mt-16">
         <div class="card flex gap-5 justify-center items-center font-lato">
           <div>
-            <img src="./images/member1.png" alt="" srcset="">
+            <img class="w-24 h-24" src="./images/member1.png" alt="" srcset="">
           </div>
           <div class="flex justify-center items-center gap-1 flex-col">
             <h2 class="text-xl font-bold text-white text-center">Awlad Hossain</h2>
@@ -433,7 +439,7 @@
         </div>
         <div class="card flex gap-5 justify-center items-center font-lato">
           <div>
-            <img src="./images/member3.png" alt="" srcset="">
+            <img class="w-24 h-24" src="./images/member3.png" alt="" srcset="">
           </div>
           <div class="flex justify-center items-center gap-1 flex-col">
             <h2 class="text-xl font-bold text-white text-center">Rokib Hossain</h2>
@@ -496,7 +502,7 @@
         </div>
         <div class="card flex gap-5 justify-center items-center font-lato">
           <div>
-            <img src="./images/member2.png" alt="" srcset="">
+            <img class="w-24 h-24" src="./images/member2.png" alt="" srcset="">
           </div>
           <div class="flex justify-center items-center gap-1 flex-col">
             <h2 class="text-xl font-bold text-white text-center">Safia Chowdhury</h2>
@@ -555,11 +561,10 @@
                 </svg></a>
             </div>
           </div>
-
         </div>
         <div class="card flex gap-5 justify-center items-center font-lato">
           <div>
-            <img class="" src="./images/member4.png" alt="" srcset="">
+            <img class="w-24 h-24" class="" src="./images/member4.png" alt="" srcset="">
           </div>
           <div class="flex justify-center items-center gap-1 flex-col">
             <h2 class="text-xl font-bold text-white text-center">Chaity</h2>
@@ -635,7 +640,7 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         <!-- col 1 -->
-        <div class="order-3 md:order-none lg:order-none">
+        <div class="order-3 md:order-none lg:order-none -mt-6 mb:mt-0 lg:mt-0">
           <div class="flex flex-col md:flex-row lg:flex-row gap-4 mb-8">
             <div class="flex justify-center md:justify-start lg:justify-start">
               <div>
@@ -643,7 +648,7 @@
               </div>
             </div>
             <div class="flex flex-col items-center md:items-start lg:items-start">
-              <h2 class="text-xl font-bold text-[#121212]">Awlad Hossain</h2>
+              <h2 class="text-xl font-bold text-[#121212]">Dedicated Team</h2>
               <div class="">
                 <span class="bg-[#121212] w-20 block my-3" style="height: 1px; color: rgba(18, 18, 18, 0.80);"></span>
               </div>
@@ -658,7 +663,7 @@
               </div>
             </div>
             <div class="flex flex-col items-center md:items-start lg:items-start">
-              <h2 class="text-xl font-bold text-[#121212]">Awlad Hossain</h2>
+              <h2 class="text-xl font-bold text-[#121212]">Fresh is Best</h2>
               <div class="">
                 <span class="bg-[#121212] w-20 block my-3" style="height: 1px; color: rgba(18, 18, 18, 0.80);"></span>
               </div>
@@ -673,7 +678,7 @@
               </div>
             </div>
             <div class="flex flex-col items-center md:items-start lg:items-start">
-              <h2 class="text-xl font-bold text-[#121212]">Awlad Hossain</h2>
+              <h2 class="text-xl font-bold text-[#121212]">Gift Certificates</h2>
               <div class="">
                 <span class="bg-[#121212] w-20 block my-3" style="height: 1px; color: rgba(18, 18, 18, 0.80);"></span>
               </div>
@@ -705,7 +710,7 @@
           </div>
           <div class="flex gap-4 mb-8 flex-col md:flex-row lg:flex-row flex-col-reverse">
             <div class="text-center md:text-right lg:text-right">
-              <h2 class="text-xl font-bold text-[#121212]">Integrated Supplier</h2>
+              <h2 class="text-xl font-bold text-[#121212]">Sustainable Practice</h2>
               <div class=" flex justify-center md:justify-end lg:justify-end">
                 <span class="bg-[#121212] w-20 block my-3" style="height: 1px; color: rgba(18, 18, 18, 0.80);"></span>
               </div>
@@ -720,7 +725,7 @@
           </div>
           <div class="flex gap-4 mb-8 flex-col md:flex-row lg:flex-row flex-col-reverse">
             <div class="text-center md:text-right lg:text-right">
-              <h2 class="text-xl font-bold text-[#121212]">Integrated Supplier</h2>
+              <h2 class="text-xl font-bold text-[#121212]">The Benefits Only</h2>
               <div class=" flex justify-center md:justify-end lg:justify-end">
                 <span class="bg-[#121212] w-20 block my-3" style="height: 1px; color: rgba(18, 18, 18, 0.80);"></span>
               </div>
